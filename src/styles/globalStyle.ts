@@ -45,10 +45,10 @@ export default createGlobalStyle`
   }
   
   ::-webkit-scrollbar {
-    width: 0.8rem;
-
+    width: 6px;
+    
     @media (max-width: 768px) {
-      width: .2rem;
+      width: 4px;
     }
   }
 
@@ -57,7 +57,8 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.COLORS.GRAY2};
-    border-radius: 0.2rem;
+    background-color: ${({ theme }) => theme.COLORS.BLUE};
+    border-radius: 8px;
+    
   }
 `

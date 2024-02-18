@@ -4,8 +4,12 @@ export default {
     BLUE: "#1E6F9F",
     BLUE_DARK: "#0E8EC0",
 
+    RED_LIGHT: "#AB222E",
     RED: "#85222A",
     RED_DARK: "#7A1921",
+
+    ORANGE:"#FBA94C",
+    GREEN: "#04D361",
 
     GRAY0: "#29292E",
     GRAY1: "#121214",
