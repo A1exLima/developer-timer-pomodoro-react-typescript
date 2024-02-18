@@ -4,7 +4,7 @@ interface ContProps {
   $disabled: boolean
 }
 
-export const Container = styled.div`
+export const Container = styled.div<ContProps>`
   width: 100%;
   padding-bottom: 5.8rem;
   display: flex;
@@ -25,6 +25,7 @@ export const Container = styled.div`
 
     > input {
       outline: none;
+      opacity: ${({$disabled}) => $disabled ? .5 : 1};
       min-width: 27.5rem;
       height: 4rem;
       border: none;
@@ -77,7 +78,7 @@ export const Cont = styled.div<ContProps>`
   }
 
   > button {
-    cursor: pointer;
+    cursor: ${({$disabled}) => $disabled ? "auto" : "pointer"};
     border: none;
     background-color: transparent;
     color: ${({theme})=> theme.COLORS.GRAY7};
@@ -85,13 +86,14 @@ export const Cont = styled.div<ContProps>`
     padding-top: .4rem;
 
     transition: transform .3s ease-in-out;
-
+    
     &:hover {
-      transform: scale(1.2);
+      transform: ${({$disabled}) => $disabled ? "scale(1)" : "scale(1.2)"};
     }
 
     > svg {
       font-size: 1.6rem;
+      opacity: ${({$disabled}) => $disabled ? .5 : 1};
     }
   }
 

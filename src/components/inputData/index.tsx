@@ -33,13 +33,14 @@ export function InputData({onSetTimer, status}: InputDataProps){
   },[status])
 
   return(
-    <Container>
+    <Container $disabled={status}>
       <div>
         <p>Vou trabalhar em:</p>
 
         <input 
           type="text" 
           placeholder="Dê um nome para o seu projeto "
+          disabled={status}
         />
       </div>
 
