@@ -1,12 +1,13 @@
 export default {
   COLORS: {
-    GREEN_LIGHT: "#00B37E",
-    GREEN: "#00875F",
-    GREEN_DARK: "#015F43",
+    BLUE_LIGHT: "#4EA8DE",
+    BLUE: "#1E6F9F",
+    BLUE_DARK: "#0E8EC0",
 
-    RED: "#F03847",
+    RED: "#85222A",
     RED_DARK: "#7A1921",
 
+    GRAY0: "#29292E",
     GRAY1: "#121214",
     GRAY2: "#202024",
     GRAY3: "#323238",

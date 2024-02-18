@@ -23,6 +23,20 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
 
+  input:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 1px ${({theme})=> theme.COLORS.BLUE_DARK};
+    border-radius: 2px;
+
+    @media (max-width: 468px) {
+      box-shadow: none;
+    }
+  }
+
+  :focus {
+    outline: transparent;
+  }
+
   body, input, button {
     font-size: 1.6rem;
     font-family: var(--font-roboto);
@@ -31,7 +45,7 @@ export default createGlobalStyle`
   }
   
   ::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.8rem;
 
     @media (max-width: 768px) {
       width: .2rem;
@@ -43,7 +57,7 @@ export default createGlobalStyle`
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: ${({ theme }) => theme.COLORS.GREEN_DARK};
+    background-color: ${({ theme }) => theme.COLORS.GRAY2};
     border-radius: 0.2rem;
   }
 `

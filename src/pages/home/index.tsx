@@ -1,9 +1,19 @@
-import { Container } from "./style"
+import { Container, Main, Content, Article} from "./style"
+
+import { Header } from "../../components/header"
+import { Timer } from "../../components/timer"
 
 export function Home(){
   return(
     <Container>
-      <p>Teste</p>
+      <Main>
+        <Header/>
+        <Article>
+          <Content>
+            <Timer/>
+          </Content>
+        </Article>
+      </Main>
     </Container>
   )
 }
